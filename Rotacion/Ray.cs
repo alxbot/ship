@@ -9,11 +9,15 @@ namespace Rotacion
     {
         public Vector2 pos;
         public Vector2 dir;
+        public float angle;
 
-        public Ray(int x, int y)
+        public Ray(int x, int y, float rangle)
         {
             pos = new Vector2(x, y);
-            dir = new Vector2(1, 0);
+            // TODO Create a Vector from angle
+            dir = new Vector2((float)Math.Sin(rangle), (float)Math.Cos(rangle));
+           // dir = new Vector2(1, 0);
+
 
         }
 
@@ -23,6 +27,7 @@ namespace Rotacion
             dir.Y = y - pos.Y;
             dir.Normalize();
 
+
         }
 
        public void showLine(SpriteBatch sb, Texture2D line)
@@ -30,9 +35,9 @@ namespace Rotacion
 
             //float angle =
             //float dist = Vector2.Distance(p1, p2);
-            int width = 0;
-            int height = 0;
-            sb.Draw(line, new Rectangle((int)pos.X, (int)pos.Y, width, height), null, Color.White, (float)Math.Atan2(dir.Y, dir.X), new Vector2(0,0), SpriteEffects.None, 0f);
+            int width = 400;
+            int height = 1;
+            sb.Draw(line, new Rectangle((int)pos.X, (int)pos.Y, width, height), null, Color.White, (float)Math.Atan2(dir.Y, dir.X) + MathHelper.ToRadians(angle), new Vector2(0,0), SpriteEffects.None, 0f);
 
 
         }
@@ -82,7 +87,7 @@ namespace Rotacion
 
             if (den == 0)
             {
-                return pt;
+                return Vector2.Zero;
             }
 
             float t = ((x1 - x3) * (y3 - y4) - (y1 - y3) * (x3 - x4))/ den;
@@ -96,7 +101,7 @@ namespace Rotacion
                 return pt;
             } else
             {
-                return pt;
+                return Vector2.Zero;
             }
 
         }

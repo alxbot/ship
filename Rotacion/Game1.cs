@@ -39,9 +39,10 @@ namespace Rotacion
         float speed = 10f;
 
         // ray
-        Ray ray = new Ray(0, 0);
+        Ray ray = new Ray(0, 0, 0);
         Boundary wall = new Boundary(400, 300, 300, 400);
         Boundary line = new Boundary(100, 200, 100, 210);
+        Particle part;
 
 
         public Game1()
@@ -188,6 +189,9 @@ namespace Rotacion
                 Color.White //Color
                );
 
+
+
+
             //drawwing WALL line
             wall.dLine(wall.pointA, wall.pointB,_spriteBatch,pixel16);
 
@@ -198,22 +202,35 @@ namespace Rotacion
             ray.pos.Y = position.Y;
             //line.dLine(line.pointA, line.pointB, _spriteBatch, pixel16);
 
-           _spriteBatch.Draw(
-                pixel16,
-                ray.Cast(wall),
-                null,
-                Color.Red,
-                0,
-                new Vector2(16/2, 16/2),
-                1,
-                SpriteEffects.None,
-                1
-        
-                );
+
+            // square signal
+            _spriteBatch.Draw(
+                 pixel16,
+                 ray.Cast(wall),
+                 null,
+                 Color.Red,
+                 0,
+                 new Vector2(16 / 2, 16 / 2),
+                 1,
+                 SpriteEffects.None,
+                 1
+
+                 );
+
+            // DRAWING PARTICLES
+            //new Particle();
+
+            part = new Particle(_spriteBatch, pixel16, new Vector2(position.X, position.Y),wall);
+            part.show();
 
 
-
-            
+            //Data PArticle
+            _spriteBatch.DrawString(
+                logShip,
+                part.rays[22].ToString(),
+                new Vector2(0, 500), // position
+                Color.White //Color
+               );
 
             _spriteBatch.End();
 

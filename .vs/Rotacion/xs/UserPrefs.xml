@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{61798C88-F042-4D4A-8117-632CE98EFB6A}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Rotacion/Game1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Rotacion/Particle.cs">
     <Files>
-      <File FileName="Rotacion/Game1.cs" Line="43" Column="54" />
-      <File FileName="Rotacion/Boundary.cs" />
-      <File FileName="Rotacion/Ray.cs" />
+      <File FileName="Rotacion/Game1.cs" Line="200" Column="13" />
+      <File FileName="Rotacion/Boundary.cs" Line="30" Column="75" />
+      <File FileName="Rotacion/Ray.cs" Line="17" Column="80" />
+      <File FileName="Rotacion/Particle.cs" Line="12" Column="49" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,10 +12,13 @@
           <Node name="Rotacion" expanded="True">
             <Node name="Rotacion" expanded="True">
               <Node name="Content" expanded="True" />
-              <Node name="Game1.cs" selected="True" />
+              <Node name="Particle.cs" selected="True" />
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
