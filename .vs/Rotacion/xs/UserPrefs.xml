@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{61798C88-F042-4D4A-8117-632CE98EFB6A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Rotacion/Game1.cs">
+    <Files>
+      <File FileName="Rotacion/Game1.cs" Line="43" Column="54" />
+      <File FileName="Rotacion/Boundary.cs" />
+      <File FileName="Rotacion/Ray.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Rotacion" expanded="True">
+            <Node name="Rotacion" expanded="True">
+              <Node name="Content" expanded="True" />
+              <Node name="Game1.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Rotacion PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

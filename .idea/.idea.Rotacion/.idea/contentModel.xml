@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Rotacion" t="IncludeRecursive">
+        <e p="app.manifest" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Content" t="Include">
+          <e p="bin" t="Include">
+            <e p="DesktopGL" t="Include">
+              <e p="Content" t="Include">
+                <e p="ship.xnb" t="Include" />
+                <e p="spaceFont.xnb" t="Include" />
+              </e>
+              <e p="ship.xnb" t="Include" />
+              <e p="spaceFont.xnb" t="Include" />
+            </e>
+          </e>
+          <e p="Content.mgcb" t="Include" />
+          <e p="obj" t="Include">
+            <e p="DesktopGL" t="Include">
+              <e p=".mgcontent" t="Include" />
+              <e p=".mgstats" t="Include" />
+              <e p="Content" t="Include">
+                <e p=".mgcontent" t="Include" />
+                <e p=".mgstats" t="Include" />
+                <e p="ship.mgcontent" t="Include" />
+                <e p="spaceFont.mgcontent" t="Include" />
+              </e>
+              <e p="ship.mgcontent" t="Include" />
+              <e p="spaceFont.mgcontent" t="Include" />
+            </e>
+          </e>
+          <e p="ship.png" t="Include" />
+          <e p="spaceFont.spritefont" t="Include" />
+        </e>
+        <e p="Game1.cs" t="Include" />
+        <e p="Icon.bmp" t="Include" />
+        <e p="Icon.ico" t="Include" />
+        <e p="Microsoft.Xna.Framework.Content.ContentTypeReader" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Rotacion.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Rotacion.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Rotacion.sln" t="IncludeFlat" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.2/resharper-host/local/Transient/Rider/v202/SolutionCaches/_Rotacion.456398956.00" t="ExcludeRecursive" />
+  </component>
+</project>
