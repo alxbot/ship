@@ -16,7 +16,8 @@ namespace Rotacion
             pos = new Vector2(x, y);
             // TODO Create a Vector from angle
             dir = new Vector2((float)Math.Sin(rangle), (float)Math.Cos(rangle));
-           // dir = new Vector2(1, 0);
+            // dir = new Vector2(1, 0);
+            angle = rangle;
 
 
         }

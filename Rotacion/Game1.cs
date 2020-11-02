@@ -41,8 +41,11 @@ namespace Rotacion
         // ray
         Ray ray = new Ray(0, 0, 0);
         Boundary wall = new Boundary(400, 300, 300, 400);
+        Boundary wall2 = new Boundary(600, 300, 600, 400);
         Boundary line = new Boundary(100, 200, 100, 210);
+        //TODO mejora esto
         Particle part;
+        Particle part2;
 
 
         public Game1()
@@ -194,7 +197,7 @@ namespace Rotacion
 
             //drawwing WALL line
             wall.dLine(wall.pointA, wall.pointB,_spriteBatch,pixel16);
-
+            wall2.dLine(wall2.pointA, wall2.pointB, _spriteBatch, pixel16);
 
             // drawing ray
             ray.showLine(_spriteBatch, pixel16);
@@ -219,9 +222,11 @@ namespace Rotacion
 
             // DRAWING PARTICLES
             //new Particle();
-
-            part = new Particle(_spriteBatch, pixel16, new Vector2(position.X, position.Y),wall);
+            // TODO: Mejora esto, está repetido
+            part2 = new Particle(_spriteBatch, pixel16, new Vector2(position.X, position.Y), wall);
+            part = new Particle(_spriteBatch, pixel16, new Vector2(position.X, position.Y),wall2);
             part.show();
+            part2.show();
 
 
             //Data PArticle
